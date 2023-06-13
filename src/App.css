@@ -1,0 +1,183 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(40deg, #7303c0, #00b09b, #96c93d);
+}
+
+* {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(40deg, #7303c0, #00b09b, #96c93d);
+}
+
+/* AIO APPS */
+.container-fluid {
+  padding: 1px;
+}
+
+.aio-app {
+  width: 100%;
+  max-width: 460px;
+  background: linear-gradient(40deg, #7303c0, #ec38bc);
+  color: whitesmoke;
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.16),
+    0 5px 10px 5px rgba(0, 0, 0, 0.12);
+  margin: 100px auto 20px;
+  padding: 40px 30px 50px;
+  border-radius: 10px;
+}
+
+.aio-app h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.custom-row {
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.16),
+    0 5px 10px 5px rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #edeef0;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 4px;
+  margin-bottom: 4rem;
+}
+
+/* Todo App */
+.custom-row h2 {
+  color: rgba(0, 0, 0, 0.795);
+  padding: 14px;
+  font-size: 18px;
+  cursor: default;
+}
+
+input,
+h2 {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 14px;
+  background: transparent;
+  font-size: 18px;
+}
+
+.custom-btn {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  background: coral;
+  color: whitesmoke;
+  font-size: 18px;
+  cursor: default;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.custom-btn:hover {
+  background-color: #00b09b;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.16),
+    0 3px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.custom-btn:active {
+  background-color: #2ab6a6;
+  box-shadow: unset;
+  transition: unset;
+}
+
+.unordered-list {
+  border-radius: 15px;
+  color: rgba(0, 0, 0, 0.795);
+  background: #edeef0;
+}
+
+.todo-app ul li {
+  border-radius: 15px;
+  list-style: none;
+  font-size: 18px;
+  padding-left: 15px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.16);
+}
+
+li .list {
+  padding: 11px !important;
+  padding-left: 30px !important;
+}
+
+.strike {
+  opacity: 0.5;
+  text-decoration: line-through red;
+}
+
+.del-btn,
+.edit-btn,
+.check-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-image: url(./assets/delete.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s;
+}
+
+.del-btn:hover,
+.edit-btn:hover,
+.check-btn:hover {
+  filter: grayscale(70%);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.16),
+    0 0px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.del-btn:active,
+.edit-btn:active,
+.check-btn:active {
+  box-shadow: unset;
+  transition: unset;
+}
+
+.check-btn {
+  border: 1px;
+  border-color: black;
+  right: 365px;
+  opacity: 0.3;
+  background-image: url(./assets/checked.png);
+}
+
+.checked {
+  background-image: url(./assets/checked.png);
+  opacity: 1;
+}
+
+.edit-btn {
+  border: none;
+  right: 45px;
+  background-image: url(./assets/edit.png);
+}
+
+.del-btn {
+  border: none;
+}
